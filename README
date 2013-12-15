@@ -1,0 +1,1 @@
+EC2QuickManager is a simple Python script to help ease common EC2 tasks, such as launching  and terminating EC2 instances.  It also provies functionality to terminate EC2 instances wich  are not tagged.  This is a work in progress, mostly intended to learn Python.  Please use with caution.
