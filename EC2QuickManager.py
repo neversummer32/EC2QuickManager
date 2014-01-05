@@ -17,7 +17,7 @@ def set_region(region='us-west-2'):
 
 #Launch EC2 instances with quick defaults
 def launch_instance(num=1, instance_type='t1.micro', tag='QuickLaunched', ami='ami-be1c848e', 
-	sg='LinuxSG', key='IAM-Grizzel'):
+	sg='LinuxSG', key='KeyPairName'):
 	conn = set_region()
 	reservation = conn.run_instances(ami, key_name=key, instance_type=instance_type, 
 		security_groups=[sg], max_count=num)
